@@ -31,43 +31,43 @@ function generateMarkdown(data) {
   return `# ${data.title} using ${data.license}
 
         ## Table of Contents
-        [Text](link)
+        [Installation](https://github.com/cycoconutz/README-Generator/tree/main/Develop#installation)
 
-        [Text](link)
+        [Description](https://github.com/cycoconutz/README-Generator/tree/main/Develop#description)
 
-        [Text](link)
+        [Usage](https://github.com/cycoconutz/README-Generator/tree/main/Develop#usage)
 
-        [Text](link)
+        [License](https://github.com/cycoconutz/README-Generator/tree/main/Develop#license)
 
-        [Text](link)
+        [Contributors](https://github.com/cycoconutz/README-Generator/tree/main/Develop#contributors)
 
-        [Text](link)
+        [Contact Information](https://github.com/cycoconutz/README-Generator/tree/main/Develop#contact-information)
 
         --------------------------------------------------------
 
-        ## Installation:${a href = "Installation" ></a >}
+        ## Installation:
         The application will be invoked by using the following command:
-        ${ data.startcmd }
+        ${data.startcmd}
 
         And is dependant upon:
-        ${ data.dependencies }
+        ${data.dependencies}
 
         ## Description
-        ${ data.description }
+        ${data.description}
 
         ## Usage
-        ${ data.usage }
+        ${data.usage}
 
         ## License
-        ${ licenseFieldText(data.license, data.name) }
+        ${licenseFieldText(data.license, data.name)}
 
-        ##Contributors
-        ${ data.credit }
+        ## Contributors
+        ${data.credit}
 
         ## Contact Information
 
-        You can see the code for this project at www.github.com / ${ data.github }
-        You can also reach me personally at my email address: ${ data.email }
+        You can see the code for this project at www.github.com / ${data.github}
+        You can also reach me personally at my email address: ${data.email}
 
 `
 };
