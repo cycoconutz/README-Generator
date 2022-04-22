@@ -1,48 +1,34 @@
-const license = value => {
-  switch (value) {
-    case "MIT":
-      return '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)';
-    case "GNU":
-      return '[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)';
-    case "ISC":
-      return '[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)';
-    default:
-      return "";
-  }
-};
-
 // switch() to run through licensure text based on user list-selection
-const licenseFieldText = (value, name) => {
-  switch (value) {
-    case "MIT":
-      return 'Copyright © 2020 ' + name;
-    case "GNU":
-      return 'Copyright © 2007 Free Software Foundation, Inc. <https://fsf.org/>';
-    case "ISC":
-      return 'Copyright 2020 ' + name;
-    default:
-      return "";
+function renderBadge(license) {
+  if (license === "MIT") {
+    return `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`
+  }
+  if (license === "GPLv2") {
+    return `[![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)`
+  }
+  if (license === "Apache") {
+    return `[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`
+  }
+  else {
+    return ``
   }
 }
 
 // TODO: Create a function to generate markdown for README
 
 function generateMarkdown(data) {
-  return `# ${data.title} using ${data.license}
+  let badge = renderBadge(data.license);
+  return `# ${data.title}
+        ${badge}
 
-        ## Table of Contents
-        [Installation](https://github.com/cycoconutz/README-Generator/tree/main/Develop#installation)
-
-        [Description](https://github.com/cycoconutz/README-Generator/tree/main/Develop#description)
-
-        [Usage](https://github.com/cycoconutz/README-Generator/tree/main/Develop#usage)
-
-        [License](https://github.com/cycoconutz/README-Generator/tree/main/Develop#license)
-
-        [Contributors](https://github.com/cycoconutz/README-Generator/tree/main/Develop#contributors)
-
-        [Contact Information](https://github.com/cycoconutz/README-Generator/tree/main/Develop#contact-information)
-
+         ## Table of Contents
+         [Installation](#installation)
+         [Description](#description)
+         [Installation](#installation)
+         [Usage](#usage)
+         [License](#license)
+         [Contributors](#contributors)
+         [Contact](#contact)
         --------------------------------------------------------
 
         ## Installation:
@@ -59,16 +45,16 @@ function generateMarkdown(data) {
         ${data.usage}
 
         ## License
-        ${licenseFieldText(data.license, data.name)}
+        ${data.license}
 
         ## Contributors
         ${data.credit}
 
-        ## Contact Information
+        ## Contact
 
-        You can see the code for this project at www.github.com / ${data.github}
+        You can see the code for this project at www.github.com/${data.github}
+
         You can also reach me personally at my email address: ${data.email}
-
 `
 };
 

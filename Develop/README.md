@@ -1,41 +1,37 @@
-# README Generator using MIT License
+# A Test
+        
 
-        ## Table of Contents
-        [Installation](https://github.com/cycoconutz/README-Generator/tree/main/Develop#installation)
-
-        [Description](https://github.com/cycoconutz/README-Generator/tree/main/Develop#description)
-
-        [Usage](https://github.com/cycoconutz/README-Generator/tree/main/Develop#usage)
-
-        [License](https://github.com/cycoconutz/README-Generator/tree/main/Develop#license)
-
-        [Contributors](https://github.com/cycoconutz/README-Generator/tree/main/Develop#contributors)
-
-        [Contact Information](https://github.com/cycoconutz/README-Generator/tree/main/Develop#contact-information)
-
+         ## Table of Contents
+         [Installation](#installation)
+         [Description](#description)
+         [Installation](#installation)
+         [Usage](#usage)
+         [License](#license)
+         [Contributors](#contributors)
+         [Contact](#contact)
         --------------------------------------------------------
 
         ## Installation:
         The application will be invoked by using the following command:
-        node index.js
+        undefined
 
         And is dependant upon:
-        inquirer and fs
+        undefined
 
         ## Description
-        A NodeJS script that takes user input and constructs a README markdown file with that input and putting it in an organized manner
+        undefined
 
         ## Usage
-        For students or employees who need to regularly create consistent project README files
+        undefined
 
         ## License
-        
+        undefined
 
         ## Contributors
-        Danny Yates
+        undefined
 
-        ## Contact Information
+        ## Contact
 
-        You can see the code for this project at www.github.com / cycoconutz
-        You can also reach me personally at my email address: johndyates@gmail.com
+        You can see the code for this project at www.github.com/undefined
 
+        You can also reach me personally at my email address: undefined
