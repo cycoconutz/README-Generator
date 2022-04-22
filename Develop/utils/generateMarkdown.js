@@ -26,45 +26,50 @@ const licenseFieldText = (value, name) => {
 }
 
 // TODO: Create a function to generate markdown for README
-module.exports = {
-  generateMarkdown: data => {
-    function generateMarkdown(data) {
-      return `# ${data.title} using  ${license(data.license)}
+
+function generateMarkdown(data) {
+  return `# ${data.title} using ${data.license}
 
         ## Table of Contents
-        * [Installation](#installation)
-        * [Usage](#usage)
-        * [License](#license)
-        * [Contributors](#contributors)
-        * [Contact Information](#contact-information)
+        [Text](link)
 
+        [Text](link)
 
-        ## Installation:
+        [Text](link)
+
+        [Text](link)
+
+        [Text](link)
+
+        [Text](link)
+
+        --------------------------------------------------------
+
+        ## Installation:${a href = "Installation" ></a >}
         The application will be invoked by using the following command:
-        ${data.startcmd}
+        ${ data.startcmd }
+
         And is dependant upon:
-        ${data.dependencies}
+        ${ data.dependencies }
+
+        ## Description
+        ${ data.description }
 
         ## Usage
-        ${data.description}
-        ${data.usage}
+        ${ data.usage }
 
         ## License
-        ${licenseFieldText(data.license, data.name)}
+        ${ licenseFieldText(data.license, data.name) }
 
-        #Contributors
-        ${data.credit}
+        ##Contributors
+        ${ data.credit }
 
         ## Contact Information
 
-        You can see the code for this project at www.github.com/${data.github}
-        You can also reach me personally at my email address: ${data.email}
+        You can see the code for this project at www.github.com / ${ data.github }
+        You can also reach me personally at my email address: ${ data.email }
 
-        `
-    }
-  }
+`
 };
 
-
-
-    // module.exports = generateMarkdown;
+module.exports = { generateMarkdown };
