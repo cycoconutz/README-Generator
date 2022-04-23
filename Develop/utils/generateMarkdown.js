@@ -68,7 +68,7 @@ ${data.credit}
 
 You can see the code for this project at [${data.github}](www.github.com/${data.github})
 
-You can also reach me personally at my email address: ${data.email}
+You can also reach me personally at my email address: [${data.email}](mailto:${data.email})
 `
 };
 
