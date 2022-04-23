@@ -19,42 +19,49 @@ function renderBadge(license) {
 function generateMarkdown(data) {
   let badge = renderBadge(data.license);
   return `# ${data.title}
-        ${badge}
 
-         ## Table of Contents
-         [Installation](#installation)
-         [Description](#description)
-         [Installation](#installation)
-         [Usage](#usage)
-         [License](#license)
-         [Contributors](#contributors)
-         [Contact](#contact)
-        --------------------------------------------------------
+${badge}
 
-        ## Installation:
-        The application will be invoked by using the following command:
-        ${data.startcmd}
+## Table of Contents
 
-        And is dependant upon:
-        ${data.dependencies}
+*[Installation](#installation)
 
-        ## Description
-        ${data.description}
+*[Description](#description)
 
-        ## Usage
-        ${data.usage}
+*[Usage](#usage)
 
-        ## License
-        ${data.license}
+*[License](#license)
 
-        ## Contributors
-        ${data.credit}
+*[Contributors](#contributors)
 
-        ## Contact
+*[Contact](#contact)
 
-        You can see the code for this project at www.github.com/${data.github}
 
-        You can also reach me personally at my email address: ${data.email}
+
+## Installation:
+The application will be invoked by using the following command:
+${data.startcmd}
+
+And is dependant upon:
+${data.dependencies}
+
+## Description
+${data.description}
+
+## Usage
+${data.usage}
+
+## License
+${data.license}
+
+## Contributors
+${data.credit}
+
+## Contact
+
+You can see the code for this project at [${data.github}](www.github.com/${data.github})
+
+You can also reach me personally at my email address: ${data.email}
 `
 };
 
