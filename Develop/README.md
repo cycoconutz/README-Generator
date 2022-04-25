@@ -20,15 +20,15 @@
 
 ## Installation:
 The application will be invoked by using the following command:
-inquirer
-
-
-And is dependant upon:
 node index.js
 
 
+And is dependant upon:
+inquirer
+
+
 ## Description
-A readme generating function that prompts the user for input then builds a readme in an organized manner from that input
+A readme generating function that priompts the user for input then builds a readme in an organized manner from that input
 
 
 ## Usage
@@ -40,12 +40,13 @@ MIT License
 
 
 ## Contributors
-danny yates
+Danny Yates
+Special thanks to Ryan Thomas
 
 
 ## Contact
 
 
-You can see the code for this project at [cycoconutz](www.github.com/cycoconutz)
+You can see the code for this project at [cycococnutz](www.github.com/cycococnutz)
 
 You can also reach me personally at my email address: [johndyates@gmail.com](mailto:johndyates@gmail.com)
